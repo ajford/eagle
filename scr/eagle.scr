@@ -2,7 +2,9 @@
 #
 # This file can be used to configure the editor windows.
 
-Assign F3 'Delete';
+Assign F1 'Window;';
+Assign AF1 'Window fit;';
+
 Assign F4 'Name';
 Assign F5 'Value';
 Assign F6 'Smash';
@@ -39,15 +41,24 @@ Set palette 24 0xFFC0C0C0; #Grey - color used when text is selected (anti palett
 Set color_layer 21 16; #Set tPlace to white
 Set color_layer 22 14; #Set bPlace to yellow
 Set color_layer 51 6; #Set tDocu to mellow yellow
-display none; display 1 16 17 18 19 20 21 22 23 24 45 51; display -25 -26 -27 -28;
+display none; display 1 16 17 18 19 20 21 22 23 24 25 26 27 28 45 51;
 
 #Assing shortcuts
 Assign F8 ratsnest;
 
-Assign F9 'Route';
-Assign AF9 'Ripup';
+Assign F2 'Route';
+Assign AF2 'Ripup';
 
+Assign F3 'display all;ripup @;display last;'
+
+# Default Layers
+Assign F9 'display none; display 1 16 17 18 19 20 21 22 23 24 25 26 27 28 45 51;'
+# OSHPark Silk
+Assign AF9 'display none; display 1 16 17 18 19 20 21 22 25 26 45;'
+
+# Top Only
 Assign F11 'display none; display 1 16 17 18 19 20 21 22 23 24 45 51; display -25 -26 -27 -28;';
+# Bottom Only
 Assign AF11 'display none; display 17 20 21 23 27 31 45 51; display -25 -26 -28;';
 
 Assign F12 show;
@@ -56,8 +67,11 @@ Assign F10 'Grid inch 0.05 on; Grid alt inch 0.005;';
 Assign AF10 'Grid mm 1 on; Grid alt mm 0.1;';
 
 SCH:
-Assign F9 'Net';
-Assign AF9 'Label';
+Assign F2 'Net';
+Assign AF2 'Label';
+
+Assign F3 'Delete';
+
 Grid Default;
 Change Width 0.008;
 
